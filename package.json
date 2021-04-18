@@ -1,0 +1,17 @@
+{
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "eslint-config-htmlacademy": "^3.0.0",
+    "gulp": "^4.0.2",
+    "webpack": "5.33.2",
+    "webpack-cli": "4.6.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "scripts": {
+    "test": "eslint source/js/",
+    "build": "webpack --mode production"
+  },
+  "dependencies": {
+    "eslint": "^7.23.0"
+  }
+}

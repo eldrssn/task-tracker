@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task tracker</title>
+  <link rel="stylesheet" type="text/css" href="./css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <script src="js/main.bundle.js" defer></script>
+</head>
+
+<body>
+  <h1 class="page_title">Roadmap</h1>
+  <div class="page_wrap">
+
+  </div>
+</body>
+
+<template id="list_wrap">
+  <section class="list_wrap">
+    <h2 class="list_title">LIST TITLE</h2>
+
+    <button type="button" class="new_card">+ add new card</button>
+  </section>
+</template>
+
+<template id="new_card">
+  <article class="card">
+    <h3 class="card_title">CARD TITLE</h3>
+    <p class="card_text">CARD TEXT</p>
+    <div class="card_bottom_wrap">
+      <p class="card_theme">CARD THEME</p>
+      <button type="button" class="card_check">
+        <svg width="20" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path id="check_icon" fill-rule="evenodd" clip-rule="evenodd"
+            d="M24 2.62787L9.54844 19.3028L0 9.75432L2.83722 6.91709L9.33855 13.4184L20.9678 0L24 2.62787Z"
+            fill="white" />
+        </svg>
+      </button>
+    </div>
+  </article>
+</template>
+
+<template id="new_card_form">
+  <form class="new_card_form" action="" method="POST">
+    <article class="card form">
+      <h3 class="card_title">
+        <label for="title"></label>
+        <input type="text" id="title" name="card_title" minlength="1" placeholder="title" required>
+      </h3>
+      <p class="card_text">
+        <label for="text"></label>
+        <textarea type="text" id="text" name="card_text" placeholder="description" contenteditable="true"></textarea>
+      </p>
+      <div class="card_bottom_wrap">
+        <p class="card_theme">
+          <label for="theme">
+            <input type="text" id="theme" name="card_theme" placeholder="theme">
+        </p>
+        <button type="button" class="is_important">
+          <svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M10 19C14 19 16.5 15.1026 16.5 12.1795C16.5 6.82051 12.5 2.92308 9.5 0C10.5 2.4359 10.4484 7.34994 7 10.2308C6 9.25641 6.5 6.33333 7 5.84615C5.5 6.33333 3 8.28205 3 12.1795C3 16.0769 6 19 10 19Z"
+              fill="#262626" />
+          </svg>
+        </button>
+      </div>
+      <div class="form_buttons_wrap">
+        <button type="submit">add</button>
+        <button type="reset">cancel</button>
+      </div>
+    </article>
+  </form>
+</template>
+
+</html>
