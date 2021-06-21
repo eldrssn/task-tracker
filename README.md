@@ -9,8 +9,6 @@
 - задачи можно переносить из одного списка в другой
 - проект сделан на ванильном Javascript
 
-оригинальный макет взят отсюда: [https://www.figma.com/community/file/814055731128774975](https://www.figma.com/community/file/814055731128774975)
-
 ---------------
 
 # Task tracker
@@ -23,5 +21,3 @@ inspired trello.com
 - when the task is completed, the card is crossed out, and the checkmark changes to a "thumbs up" icon
 - tasks can be transferred from one list to another
 - the project is made in Vanilla JS
-
-original layout is taken from: [https://www.figma.com/community/file/814055731128774975](https://www.figma.com/community/file/814055731128774975)
