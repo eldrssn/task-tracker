@@ -1,4 +1,4 @@
-// ДАННЫЙ ДЛЯ КАРТОЧЕК
+// ДАННЫE ДЛЯ КАРТОЧЕК
 const data = [
   [{
     listTitle: 'Backlog',
